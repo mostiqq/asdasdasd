@@ -1,0 +1,157 @@
+.main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 95px;
+	margin-bottom: 203px;
+	position: relative;
+
+	.blurWhite {
+		position: absolute;
+		z-index: -1;
+		right: -1100px;
+		top: -600px;
+	}
+
+	.listTop {
+		display: flex;
+		align-items: center;
+		gap: 200px;
+		margin-top: 100px;
+		margin-bottom: 160px;
+	}
+
+	.listBottom {
+		display: flex;
+		align-items: center;
+		gap: 126px;
+	}
+}
+
+@media (max-width: 1350px) {
+	.main {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding-top: 95px;
+		margin-bottom: 203px;
+		position: relative;
+
+		.blurWhite {
+			position: absolute;
+			z-index: -1;
+			right: -1100px;
+			top: -600px;
+		}
+
+		.listTop {
+			display: flex;
+			align-items: center;
+			gap: 100px !important;
+			margin-top: 0px !important;
+			margin-bottom: 80px !important;
+		}
+
+		.listBottom {
+			display: flex;
+			align-items: center;
+			gap: 90px !important;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.main {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding-top: 95px;
+		margin-bottom: 120px;
+		position: relative;
+
+		.blurWhite {
+			position: absolute;
+			z-index: -1;
+			right: -1100px;
+			top: -600px;
+		}
+
+		.listTop {
+			display: flex;
+			align-items: center;
+			gap: 50px !important;
+			margin-top: 0px !important;
+			margin-bottom: 50px !important;
+		}
+
+		.listBottom {
+			display: flex;
+			align-items: center;
+			gap: 60px !important;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.main {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding-top: 60px !important;
+		margin-bottom: 70px;
+		position: relative;
+
+		.blurWhite {
+			position: absolute;
+			z-index: -1;
+			right: -1100px;
+			top: -600px;
+		}
+
+		.listTop {
+			display: flex;
+			align-items: center;
+			gap: 30px !important;
+			margin-top: 0px !important;
+			margin-bottom: 30px !important;
+		}
+
+		.listBottom {
+			display: flex;
+			align-items: center;
+			gap: 30px !important;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.main {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding-top: 30px;
+		margin-bottom: 45px;
+		position: relative;
+
+		.blurWhite {
+			position: absolute;
+			z-index: -1;
+			right: -1100px;
+			top: -600px;
+		}
+
+		.listTop {
+			display: flex;
+			align-items: center;
+			gap: 17px !important;
+			margin-top: 0px !important;
+			margin-bottom: 30px !important;
+		}
+
+		.listBottom {
+			display: flex;
+			align-items: center;
+			gap: 17px !important;
+		}
+	}
+}

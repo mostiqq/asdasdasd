@@ -1,0 +1,131 @@
+.text {
+	font-size: 35px;
+	color: #fff;
+	margin: 0;
+	font-weight: 500;
+	line-height: 42px;
+	max-width: 500px;
+}
+
+@media (max-width: 1300px) {
+	.text {
+		font-size: 25px !important;
+		color: #fff;
+		margin: 0;
+		font-weight: 500;
+		line-height: 32px !important;
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.text {
+		font-size: 20px !important;
+		color: #fff;
+		margin: 0;
+		font-weight: 500;
+		line-height: 25px !important;
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.text {
+		font-size: 15px !important;
+		color: #fff;
+		margin: 0;
+		font-weight: 500;
+		line-height: 20px !important;
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 800px) {
+	.text {
+		font-size: 35px !important;
+		border: none !important;
+		text-align: justify !important;
+		padding: 0 !important;
+		color: #fff;
+		margin: 0;
+		font-weight: 500;
+		line-height: 50px !important;
+		max-width: 500px;
+	}
+
+	.text:not(:last-child) {
+		margin-bottom: 40px !important;
+	}
+}
+
+@media (max-width: 600px) {
+	.text {
+		font-size: 25px !important;
+		border: none !important;
+		text-align: justify !important;
+		padding: 0 !important;
+		color: #fff;
+		margin: 0;
+		font-weight: 500;
+		line-height: 40px !important;
+		max-width: 500px;
+	}
+
+	.text:not(:last-child) {
+		margin-bottom: 40px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.text {
+		font-size: 17px !important;
+		border: none !important;
+		text-align: justify !important;
+		padding: 0 !important;
+		color: #fff;
+		margin: 0;
+		font-weight: 500;
+		line-height: 25px !important;
+		max-width: 500px;
+	}
+
+	.text:not(:last-child) {
+		margin-bottom: 40px !important;
+	}
+}
+
+@media (max-width: 470px) {
+	.text {
+		font-size: 14px !important;
+		border: none !important;
+		text-align: justify !important;
+		padding: 0 !important;
+		color: #fff;
+		margin: 0;
+		font-weight: 500;
+		line-height: 25px !important;
+		max-width: 500px;
+	}
+
+	.text:not(:last-child) {
+		margin-bottom: 40px !important;
+	}
+}
+
+@media (max-width: 370px) {
+	.text {
+		font-size: 14px !important;
+		border: none !important;
+		text-align: justify !important;
+		padding: 0 !important;
+		color: #fff;
+		margin: 0;
+		font-weight: 500;
+		line-height: 20px !important;
+		max-width: 500px;
+	}
+
+	.text:not(:last-child) {
+		margin-bottom: 40px !important;
+	}
+}

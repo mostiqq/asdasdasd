@@ -1,0 +1,128 @@
+.timer {
+	margin: 0 auto 0 auto;
+	display: flex;
+	justify-content: center;
+	padding: 30px 25px;
+	border: 6px solid #fff;
+	border-radius: 25px;
+	max-width: 677px;
+	position: relative;
+
+	.modalBrainTop {
+		position: absolute;
+		z-index: 3;
+		left: 0px;
+		top: -170px;
+	}
+
+	.modalBrainRight {
+		position: absolute;
+		z-index: 3;
+		right: -30px;
+		top: -50px;
+		rotate: 25deg;
+	}
+
+	.modalBrainLeft {
+		position: absolute;
+		z-index: 3;
+		left: -35px;
+		top: 190px;
+		rotate: -130deg;
+	}
+
+	.modalBrainBottom {
+		position: absolute;
+		z-index: 3;
+		left: 295px;
+		top: 650px;
+		rotate: 180deg;
+	}
+}
+@media (max-width: 900px) {
+	.modalBrainBottom {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.modalBrainLeft {
+		position: absolute;
+		z-index: 3;
+		left: -35px !important;
+		top: 170px !important;
+		rotate: -130deg;
+	}
+}
+
+@media (max-width: 630px) {
+	.timer {
+		margin: 0 auto 0 auto;
+		display: flex;
+		justify-content: center;
+		padding: 25px 10px;
+		border: 6px solid #fff;
+		border-radius: 25px;
+		max-width: 677px;
+		position: relative;
+	}
+	.modalBrainRight {
+		display: none !important;
+	}
+
+	.modalBrainLeft {
+		display: none !important;
+	}
+
+	.modalBrainBottom {
+		display: none !important;
+	}
+}
+
+@media (max-width: 550px) {
+	.timer {
+		margin: 0 auto 0 auto;
+		display: flex;
+		justify-content: center;
+		padding: 17px 10px;
+		border: 3px solid #fff !important;
+		border-radius: 25px;
+		max-width: 677px;
+		position: relative;
+	}
+	.modalBrainRight {
+		display: none !important;
+	}
+
+	.modalBrainLeft {
+		display: none !important;
+	}
+
+	.modalBrainBottom {
+		display: none !important;
+	}
+}
+
+@media (max-width: 375px) {
+	.timer {
+		margin: 0 auto 0 auto;
+		display: flex;
+		justify-content: center;
+		padding: 17px 7px;
+		border: 2px solid #fff !important;
+		border-radius: 9px;
+		max-width: 677px;
+		position: relative;
+	}
+	.modalBrainRight {
+		display: none !important;
+	}
+
+	.modalBrainLeft {
+		display: none !important;
+	}
+
+	.modalBrainBottom {
+		display: none !important;
+	}
+}

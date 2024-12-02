@@ -1,0 +1,438 @@
+.header {
+	display: flex;
+	align-items: center;
+	background-color: #232323;
+	padding: 45px 88px;
+	justify-content: space-between;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+	margin-bottom: 140px;
+
+	.globe {
+		background-color: transparent;
+		outline: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	.title {
+		color: #fff;
+		font-size: 100px;
+		line-height: 16px;
+		font-weight: 500;
+		margin-left: 10px;
+		letter-spacing: -5px;
+	}
+
+	.modalTitle {
+		font-size: 48px;
+		font-weight: 700;
+		margin-bottom: 35px;
+	}
+
+	.modalImg {
+		margin-bottom: 30px;
+	}
+
+	.modalInput {
+		background: transparent;
+		outline: none;
+		border: 4px solid #4d4d4d;
+		padding: 14px;
+		width: 563px;
+		border-radius: 8px;
+		color: #fff;
+		font-weight: 700;
+		font-size: 24px;
+		color: #7d7d7d;
+		text-align: center;
+	}
+
+	.modalInput:not(:last-child) {
+		margin-bottom: 12px;
+	}
+
+	.modalInput::placeholder {
+		font-weight: 700;
+		font-size: 24px;
+		color: #7d7d7d;
+		text-align: center;
+	}
+
+	.modalBtn {
+		font-weight: 500;
+		color: #fff;
+		font-size: 24px;
+		padding: 10px 60px;
+		background: transparent;
+		border: 4px solid #7d7d7d;
+		border-radius: 8px;
+		stroke: #000;
+		margin-top: 60px;
+		cursor: pointer;
+	}
+
+	.modalAirDropTitle {
+		font-size: 48px;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+
+	.modalAirDropText {
+		font-size: 24px;
+		font-weight: 700;
+		margin-top: 60px;
+		letter-spacing: 0.2px;
+		line-height: 37px;
+		max-width: 609px;
+		border: 4px solid #7d7d7d;
+		border-radius: 4px;
+		padding: 5px;
+		color: #7d7d7d;
+		margin-bottom: 40px;
+	}
+
+	.modalWalletTitle {
+		font-size: 48px;
+		font-weight: 700;
+		margin-bottom: 100px;
+	}
+
+	.modalWalletBtn {
+		background: transparent;
+		outline: none;
+		cursor: pointer;
+		border: none;
+		margin-bottom: 72px;
+	}
+
+	.modalWalletSpan {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 70px;
+	}
+
+	.tonTitle {
+		font-size: 48px;
+		font-weight: 700;
+		margin-bottom: 50px;
+	}
+
+	.chooseTon {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
+
+@media (max-width: 1530px) {
+	.title {
+		font-size: 80px !important;
+	}
+
+	.globeImg {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.header {
+		padding: 30px 60px;
+	}
+
+	.title {
+		font-size: 60px !important;
+	}
+
+	.globeImg {
+		width: 39px;
+		height: 39px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.header {
+		padding: 25px 50px;
+		margin-bottom: 100px !important;
+	}
+	.title {
+		font-size: 50px !important;
+	}
+
+	.globeImg {
+		width: 33px;
+		height: 33px;
+	}
+
+	.language {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.languageItem {
+		display: flex;
+		align-items: center;
+		font-size: 13px !important;
+		padding: 6px 10px !important;
+	}
+
+	.flag {
+		width: 20px !important;
+		height: 20px !important;
+	}
+}
+
+@media (max-width: 850px) {
+	.header {
+		padding: 23px 45px;
+		margin-bottom: 75px !important;
+	}
+	.title {
+		font-size: 45px !important;
+		letter-spacing: 0px !important;
+	}
+
+	.globeImg {
+		width: 27px;
+		height: 27px;
+	}
+
+	.modalTitle {
+		font-size: 30px !important;
+		font-weight: 700;
+		margin-bottom: 35px;
+	}
+
+	.language {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.languageItem {
+		display: flex;
+		align-items: center;
+		font-size: 10px !important;
+		padding: 2px 4px !important;
+	}
+
+	.tonTitle {
+		font-size: 37px !important;
+		font-weight: 700;
+		margin-bottom: 50px;
+	}
+
+	.modalAirDropTitle {
+		font-size: 40px !important;
+	}
+
+	.modalAirDropText {
+		font-size: 18px !important;
+		margin-top: 40px !important;
+	}
+
+	.modalWalletTitle {
+		font-size: 35px !important;
+		font-weight: 700;
+		margin-bottom: 100px;
+	}
+
+	.modalWalletSpan {
+		font-size: 25px !important;
+		font-weight: 700;
+		margin-bottom: 70px;
+	}
+
+	.modalWalletImg {
+		width: 200px !important;
+		height: 200px !important;
+	}
+}
+
+@media (max-width: 740px) {
+	.header {
+		padding: 15px 30px;
+		margin-bottom: 40px !important;
+	}
+	.title {
+		font-size: 37px !important;
+		letter-spacing: 0px !important;
+	}
+	.languageItem {
+		display: flex;
+		align-items: center;
+		font-size: 8px !important;
+		padding: 2px 3px !important;
+	}
+
+	.flag {
+		width: 12px !important;
+		height: 12px !important;
+	}
+
+	.tonLogo {
+		display: none;
+	}
+
+	.globeImg {
+		width: 22px;
+		height: 22px;
+	}
+
+	.disconnectItem {
+		padding: 4px 8px !important;
+		font-size: 11px !important;
+	}
+}
+
+@media (max-width: 620px) {
+	.header {
+		padding: 11px 20px;
+	}
+	.title {
+		font-size: 25px !important;
+		letter-spacing: 0px !important;
+	}
+
+	.globeImg {
+		width: 22px;
+		height: 22px;
+	}
+
+	.modalAirDropTitle {
+		font-size: 25px !important;
+	}
+
+	.tonTitle {
+		font-size: 25px !important;
+		font-weight: 700;
+		margin-bottom: 50px;
+	}
+
+	.modalAirDropText {
+		font-size: 15px !important;
+		margin-top: 40px !important;
+	}
+
+	.modalWalletTitle {
+		font-size: 25px !important;
+		font-weight: 700;
+		margin-bottom: 50px !important;
+	}
+
+	.disconnectItem {
+		padding: 2px 4px !important;
+		font-size: 9px !important;
+	}
+
+	.modalWalletBtn {
+		background: transparent;
+		outline: none;
+		cursor: pointer;
+		border: none;
+		margin-bottom: 30px !important;
+	}
+
+	.modalWalletSpan {
+		font-size: 15px !important;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 550px) {
+	.header {
+		padding: 11px 20px;
+	}
+	.title {
+		font-size: 25px !important;
+		letter-spacing: 0px !important;
+	}
+
+	.globeImg {
+		width: 22px;
+		height: 22px;
+	}
+
+	.modalAirDropTitle {
+		font-size: 25px !important;
+	}
+
+	.modalAirDropText {
+		font-size: 12px !important;
+		margin-top: 40px !important;
+		line-height: 20px !important;
+	}
+
+	.modalTitle {
+		font-size: 22px !important;
+		font-weight: 700;
+		margin-bottom: 35px;
+	}
+}
+
+@media (max-width: 460px) {
+	.header {
+		padding: 7px 14px;
+	}
+	.title {
+		font-size: 18px !important;
+		letter-spacing: 0px !important;
+	}
+
+	.globeImg {
+		width: 17px;
+		height: 17px;
+	}
+
+	.languageItem {
+		display: flex;
+		align-items: center;
+		font-size: 7px !important;
+		padding: 2px 2px !important;
+	}
+
+	.flag {
+		width: 10px !important;
+		height: 10px !important;
+		margin-left: 1px !important;
+	}
+
+	.modalWalletImg {
+		width: 120px !important;
+		height: 120px !important;
+	}
+
+	.disconnectItem {
+		padding: 2px 3px !important;
+		font-size: 8px !important;
+	}
+}
+
+@media (max-width: 350px) {
+	.header {
+		padding: 6px 10px;
+	}
+	.title {
+		font-size: 18px !important;
+		letter-spacing: 0px !important;
+	}
+
+	.globeImg {
+		width: 17px;
+		height: 17px;
+	}
+
+	.modalWalletSpan {
+		font-size: 12px !important;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+
+	.disconnectItem {
+		padding: 1px 2px !important;
+		font-size: 7px !important;
+	}
+}
