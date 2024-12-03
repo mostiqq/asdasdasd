@@ -4,11 +4,9 @@ import { TimerModalBlock } from './TimerModalBlock'
 
 interface Props {
 	date: string
-	isTopBrainShow: boolean
 }
 
-export function TimerModal({ date, isTopBrainShow }: Props) {
-	const [seconds, setSeconds] = useState('00')
+export function TimerModal({ date }: Props) {
 	const [minutes, setMinutes] = useState('00')
 	const [hours, setHours] = useState('00')
 	const [days, setDays] = useState('00')
@@ -21,7 +19,7 @@ export function TimerModal({ date, isTopBrainShow }: Props) {
 		const dayMonth = date
 		const listingDay = dayMonth
 		const countDown = new Date(listingDay).getTime()
-		let x = setInterval(function () {
+		setInterval(function () {
 			const now = new Date().getTime(),
 				distance = countDown - now
 
@@ -39,11 +37,6 @@ export function TimerModal({ date, isTopBrainShow }: Props) {
 				String(Math.floor((distance % hour) / minute)).length == 2
 					? String(Math.floor((distance % hour) / minute))
 					: '0' + Math.floor((distance % hour) / minute)
-			)
-			setSeconds(
-				String(Math.floor((distance % minute) / second)).length == 2
-					? String(Math.floor((distance % minute) / second))
-					: '0' + Math.floor((distance % minute) / second)
 			)
 		}, 0)
 	}, [])

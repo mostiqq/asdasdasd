@@ -5,31 +5,21 @@ import Modal from '../Modal/Modal'
 import { TimerModal } from '../timer-modal/TimerModal'
 import {
 	CHAIN,
-	isWalletInfoCurrentlyEmbedded,
 	isWalletInfoCurrentlyInjected,
 	isWalletInfoRemote,
 	toUserFriendlyAddress,
 	WalletInfo,
 	WalletInfoRemote,
 } from '@tonconnect/sdk'
-import QRCode from 'react-qr-code'
 import { ModalQR } from '../Modal/ModalQR'
 import { useWallet } from '../../../hooks/useWallet'
 import { connector } from '../../../connector'
 
-interface Props {
-	lang: string | null
-}
-
-export function Header({ lang }: Props) {
+export function Header() {
 	const [isModalPreSaleOpen, setModalPreSaleOpen] = useState(false)
 	const [isModalAirDropOpen, setModalAirDropOpen] = useState(false)
 	const [isModalWalletOpen, setModalWalletOpen] = useState(false)
 	const [isModalTonOpen, setModalTonOpen] = useState(false)
-	const [isModalQROpen, setModalQROpen] = useState(false)
-	const [inputPresaleValue, setInputPresaleValue] = useState('')
-	const [inputWalletValue, setInputWalletValue] = useState('')
-	const [inputAmountValue, setInputAmountValue] = useState('')
 	const [walletsList, setWalletsList] = useState<WalletInfo[] | null>(null)
 	const [selectedWalletInfo, setSelectedWalletInfo] =
 		useState<WalletInfoRemote | null>(null)
@@ -58,18 +48,6 @@ export function Header({ lang }: Props) {
 		}
 	}, [isModalTonOpen, wallet])
 
-	const handlePresaleChange = (event: any) => {
-		setInputPresaleValue(event.target.value)
-	}
-
-	const handleWalletChange = (event: any) => {
-		setInputWalletValue(event.target.value)
-	}
-
-	const handleAmountChange = (event: any) => {
-		setInputAmountValue(event.target.value)
-	}
-
 	const openPresaleModal = () => setModalPreSaleOpen(true)
 	const openAirDropModal = () => setModalAirDropOpen(true)
 	const openWalletModal = () => {
@@ -78,19 +56,13 @@ export function Header({ lang }: Props) {
 		}
 		setModalWalletOpen(true)
 	}
-	const openQRModal = () => {
-		setModalTonOpen(false)
-		setModalQROpen(true)
-	}
+
 	const openTonModal = () => {
 		setModalWalletOpen(false)
 		setModalTonOpen(true)
 	}
 	const closePresaleModal = () => {
 		setModalPreSaleOpen(false)
-		setInputPresaleValue('')
-		setInputWalletValue('')
-		setInputAmountValue('')
 	}
 	const closeAirDropModal = () => {
 		setModalAirDropOpen(false)
@@ -101,10 +73,6 @@ export function Header({ lang }: Props) {
 	}
 	const closeTonModal = () => {
 		setModalTonOpen(false)
-	}
-
-	const closeQRModal = () => {
-		setModalQROpen(false)
 	}
 
 	const onWalletClick = (wallet: WalletInfo) => {
@@ -142,7 +110,7 @@ export function Header({ lang }: Props) {
 			<MainButton onClick={openAirDropModal} border='white' text='AirDrop' />
 			<Modal isOpen={isModalPreSaleOpen} onClose={closePresaleModal}>
 				<h2 className={styles.modalTitle}>PRESALE SOON!</h2>
-				<TimerModal isTopBrainShow={false} date='01/01/2025' />
+				<TimerModal date='01/01/2025' />
 				{/* <img
 					src={'/modal-logo.svg'}
 					alt='modal-img'
@@ -175,7 +143,7 @@ export function Header({ lang }: Props) {
 			</Modal>
 			<Modal isOpen={isModalAirDropOpen} onClose={closeAirDropModal}>
 				<h3 className={styles.modalAirDropTitle}>AirDrop SOON!</h3>
-				<TimerModal isTopBrainShow date='2/10/2025' />
+				<TimerModal date='2/10/2025' />
 				<p className={styles.modalAirDropText}>
 					The airdrop will be sent to your specified wallets. To receive an
 					airdrop you need to send an email to geekcoin.inc@proton.me with a

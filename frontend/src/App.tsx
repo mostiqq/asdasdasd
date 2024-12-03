@@ -22,7 +22,7 @@ export function App({ className }: Props) {
 	}, [])
 	return (
 		<div className={className}>
-			<Header lang={language} />
+			<Header />
 			<Timer lang={language} />
 			<We />
 			<AboutUs lang={language} />

@@ -3,13 +3,10 @@ import styles from './Timer.module.scss'
 import { TimerBlock } from './TimerBlock/TimerBlock'
 
 interface Props {
-	className?: string
-
 	lang: string | null
 }
 
-export function Timer({ className, lang }: Props) {
-	const [seconds, setSeconds] = useState('00')
+export function Timer({ lang }: Props) {
 	const [minutes, setMinutes] = useState('00')
 	const [hours, setHours] = useState('00')
 	const [days, setDays] = useState('00')
@@ -22,7 +19,7 @@ export function Timer({ className, lang }: Props) {
 		const dayMonth = '1/10/2025'
 		const listingDay = dayMonth
 		const countDown = new Date(listingDay).getTime()
-		let x = setInterval(function () {
+		setInterval(function () {
 			const now = new Date().getTime(),
 				distance = countDown - now
 
@@ -40,11 +37,6 @@ export function Timer({ className, lang }: Props) {
 				String(Math.floor((distance % hour) / minute)).length == 2
 					? String(Math.floor((distance % hour) / minute))
 					: '0' + Math.floor((distance % hour) / minute)
-			)
-			setSeconds(
-				String(Math.floor((distance % minute) / second)).length == 2
-					? String(Math.floor((distance % minute) / second))
-					: '0' + Math.floor((distance % minute) / second)
 			)
 		}, 0)
 	}, [])
